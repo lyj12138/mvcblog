@@ -255,8 +255,10 @@
                     success: function(data) {
                         if(data.stateCode.trim() == "0") {
                             $("#info").text("提示:该用户不存在");
+                            getPic();
                         } else if(data.stateCode.trim() == "1") {
                             $("#info").text("提示:密码错误");
+                            getPic();
                         } else if(data.stateCode.trim() == "2"){
                             $("#info").text("提示:登陆成功，跳转中...");
                             window.location.href="/user/main";
