@@ -28,5 +28,6 @@ com\blog\web\WebConfig.class
 com\blog\dao\AdminDao.class
 com\blog\web\AdminController.class
 com\blog\web\IndexController.class
+com\blog\util\RSAUtil.class
 com\blog\web\ArticleController.class
 com\blog\web\CommentController.class

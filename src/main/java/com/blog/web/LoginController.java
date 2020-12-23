@@ -8,6 +8,7 @@ import com.blog.service.impl.AdminLoginLogServiceImpl;
 import com.blog.service.impl.AdminServiceImpl;
 import com.blog.service.impl.UserServiceImpl;
 import com.blog.util.MD5;
+import com.blog.util.RSAUtil;
 import com.blog.util.RandomValidateCode;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,9 +50,16 @@ public class LoginController {
     @RequestMapping(value = {"/user","/user/login"})
     public String toUser(HttpServletRequest request) {
 
-
+      request.getSession().setAttribute("key",0x76);
         return "/userLogin";
 
+    }
+    @RequestMapping(value = "/api/getRSA", method = RequestMethod.GET)
+    public @ResponseBody Object RSAKey() {
+        HashMap<String, String> res = new HashMap<String, String>();
+        String publicKey = RSAUtil.generateBase64PublicKey();
+        res.put("publicKey", publicKey);
+        return res;
     }
 
     @RequestMapping(value="/api/checkCode")
@@ -83,7 +91,7 @@ public class LoginController {
     @RequestMapping(value = "/api/userCheck", method = RequestMethod.POST)
     public @ResponseBody Object loginCheck(HttpServletRequest request,HttpServletResponse httpServletResponse) throws UnsupportedEncodingException {
         request.setCharacterEncoding("UTF-8");
-        String id=MD5.convertMD5(MD5.convertMD6(request.getParameter("id")));
+        String id=MD5.convertMD5(RSAUtil.decryptBase64(request.getParameter("id")));
         String code=request.getParameter("code");
         String code_key=(String) request.getSession().getAttribute("code_key");
         String passwd=MD5.getMD5( request.getParameter("password"));

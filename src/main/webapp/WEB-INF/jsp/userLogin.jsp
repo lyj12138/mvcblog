@@ -226,6 +226,7 @@
         <button id="toRegister" class="btn btn-primary">没有账号？请点击前往登录</button>
 
     </div>
+    <script src="http://passport.cnblogs.com/scripts/jsencrypt.min.js"></script>
     <script>
 
 
@@ -244,28 +245,43 @@
             }
             else {
                 $.ajax({
-                    type: "POST",
-                    url: "/api/userCheck",
-                    data: {
-                        id:convert($("#adminId").val()) ,
-                        password:$.md5($("#passwd").val()),
-                        code:$("#fpasswd").val()
-                    },
+                    url: "/api/getRSA",
+                    type: "GET",
                     dataType: "json",
-                    success: function(data) {
-                        if(data.stateCode.trim() == "0") {
-                            $("#info").text("提示:该用户不存在");
-                            getPic();
-                        } else if(data.stateCode.trim() == "1") {
-                            $("#info").text("提示:密码错误");
-                            getPic();
-                        } else if(data.stateCode.trim() == "2"){
-                            $("#info").text("提示:登陆成功，跳转中...");
-                            window.location.href="/user/main";
-                        }
-                        else {
-                            $("#info").text("提示:验证码错误");
-                            getPic();
+                    async: false,
+                    success: function (res) {
+                        var encrypt = new JSEncrypt();//创建加密实例
+                        if (res) {
+                            var publicKey = null;
+                            publicKey = res.publicKey;//后端传回来的公钥
+                            var id;
+                            encrypt.setPublicKey(publicKey);// 初始化公钥
+                            id = encrypt.encrypt($("#adminId").val());// 加密用户名数据
+                            $.ajax({
+                                type: "POST",
+                                url: "/api/userCheck",
+                                data: {
+                                    id: id,
+                                    password: $.md5($("#passwd").val()),
+                                    code: $("#fpasswd").val()
+                                },
+                                dataType: "json",
+                                success: function (data) {
+                                    if (data.stateCode.trim() == "0") {
+                                        $("#info").text("提示:该用户不存在");
+                                        getPic();
+                                    } else if (data.stateCode.trim() == "1") {
+                                        $("#info").text("提示:密码错误");
+                                        getPic();
+                                    } else if (data.stateCode.trim() == "2") {
+                                        $("#info").text("提示:登陆成功，跳转中...");
+                                        window.location.href = "/user/main";
+                                    } else {
+                                        $("#info").text("提示:验证码错误");
+                                        getPic();
+                                    }
+                                }
+                            });
                         }
                     }
                 });
