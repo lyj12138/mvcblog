@@ -308,8 +308,8 @@
         <article class="comment" id="comment_${comment.id},floor_<%= i%>">
             <c:if test="${ comment.reference!=0}">
             <section style="text-align:left;color:gray">
-                回复${comment.floor}楼&nbsp;&nbsp;${comments[comment.floor].nickname}&nbsp;&nbsp;${comments[comment.floor].date}<br/><br/>
-                <p>${comments[comment.floor].content}</p><br/>
+                回复${comment.floor}楼&nbsp;&nbsp;${comments[comment.floor-1].nickname}&nbsp;&nbsp;${comments[comment.floor-1].date}<br/><br/>
+                <p>${comments[comment.floor-1].content}</p><br/>
             </section>
             </c:if>
                 <section style="text-align:left">
