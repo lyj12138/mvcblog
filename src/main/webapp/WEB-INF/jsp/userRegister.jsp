@@ -228,6 +228,7 @@
         <button id="tologin" class="btn btn-primary">已有账号？请点击前往登录</button>
 
     </div>
+    <script src="http://passport.cnblogs.com/scripts/jsencrypt.min.js"></script>
     <script>
         var regUpper=/[A-Z]/;
         var regLower=/[a-z]/;
@@ -320,27 +321,42 @@
             {
                 $("#info").text("提示:昵称长度不能小于3");
             }
-            else{
+            else {
                 $.ajax({
-                    type: "POST",
-                    url: "/api/registerCheck",
-                    data: {
-                        username:convert($("#username").val()) ,
-                        password: $.md5($("#passwd").val()),
-                        email:convert($("#email").val()),
-                        nickname:$("#nickname").val()
-                    },
-                    success: function(data) {
-                        if(data.stateCode.trim()==2)
-                        {
-                            $("#info").text("提示:用户注册成功，激活创作权限需后台审核通过，跳转中...");
-                            window.location.href="/user/main";
-                        }
-                        else if(data.stateCode.trim()==1){
-                            $("#info").text("提示:该用户名已被注册");
-                        }
-                        else{
-                            $("#info").text("提示:该邮箱已被注册");
+                    url: "/api/getRSA",
+                    type: "GET",
+                    dataType: "json",
+                    async: false,
+                    success: function (res) {
+                        var encrypt = new JSEncrypt();
+                        if (res) {
+                            var publicKey = null;
+                            publicKey = res.publicKey;
+                            var username;
+                            var email;
+                            encrypt.setPublicKey(publicKey);
+                            username = encrypt.encrypt($("#username").val());
+                            email = encrypt.encrypt($("#email").val())
+                            $.ajax({
+                                type: "POST",
+                                url: "/api/registerCheck",
+                                data: {
+                                    username: username,
+                                    password: $.md5($("#passwd").val()),
+                                    email: email,
+                                    nickname: $("#nickname").val()
+                                },
+                                success: function (data) {
+                                    if (data.stateCode.trim() == 2) {
+                                        $("#info").text("提示:用户注册成功，激活创作权限需后台审核通过，跳转中...");
+                                        window.location.href = "/user/main";
+                                    } else if (data.stateCode.trim() == 1) {
+                                        $("#info").text("提示:该用户名已被注册");
+                                    } else {
+                                        $("#info").text("提示:该邮箱已被注册");
+                                    }
+                                }
+                            });
                         }
                     }
                 });

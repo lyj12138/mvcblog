@@ -2,128 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48b576c3-6c09-4eac-9b0e-caa000781b4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk16_1_46.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mvcblog_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mvcblog_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mvcblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mvcblog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvcblog.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/dao/AdminDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/dao/AdminLoginLogDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/dao/ArticleDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/dao/CatalogDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/dao/CommentDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/domain/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/domain/AdminLoginLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/domain/Article.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/domain/Catalog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/domain/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/AdminLoginLogService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/AdminService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/ArticleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/CommentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/AdminLoginLogServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/AdminServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/ArticleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/CommentServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/util/MD5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/util/RandomValidateCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/web/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/web/ArticleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/web/CommentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/web/EditorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/web/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/web/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/web/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/web/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AdminLoginLogMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CatalogMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/MD5.tld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/blog-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/about.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/article_add.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/article_detail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/article_edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/article_list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/comment_list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/main.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user_edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user_list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/my_list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userBlog.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userLogin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userRegister.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/commons-codec-1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/json.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/ueditor-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/rest-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/about.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/article.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/bootstrap4.0.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/mybackground.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/web-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap4.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/convert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/jquery-3.2.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/jquery.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/md5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/skin/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/skin/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/skin/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/skin/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/skin/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/skin/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/wangEditor.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/1bf89492-12a0-452e-a13e-feb6c6a90e8c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/1c7bae7b-8131-451b-aab7-a61e6a8a46dc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/2b1f0b62-8532-4c8e-adff-596f064361fc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/3609188d-e60a-4ae6-a3ed-c1665eb0e968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/44c99164-55b0-45c7-8568-94226cfc9068.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/676c91c5-1c5c-4e95-995c-b58030180979.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/6b3269d8-5d36-484f-868c-1c7c0571d635.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/755f1821-8d63-475d-9979-f10524fad8de.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/7703dfaf-6b2d-4288-8804-d680b04afc27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/831e9a94-d3eb-41d7-9d0b-2e3cdd0dbd29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/8a3c7c9e-b3a8-49d1-9b8f-fe1756790721.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/9f568b3e-a0ac-4a56-b4c0-0bd0d9b4a867.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/a3bcc02d-b1d8-4c72-a671-4ca63ae3be6b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/d21619bd-96c7-4769-9fca-a4e1434ce165.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/d7fc0671-7e32-4a0a-ab1c-cbfbc8e0d888.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/fe20e6bb-a10d-4ee6-a131-5048839122d6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/web/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/web/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userLogin_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userLogin_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userLogin_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userLogin_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/web/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userRegister.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userRegister.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-12-23" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-12-23" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userRegister_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userRegister_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userRegister_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userRegister_jsp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -137,11 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userLogin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11">
-              <caret line="265" column="61" lean-forward="true" selection-start-line="265" selection-start-column="61" selection-end-line="265" selection-end-column="61" />
+            <state relative-caret-position="334">
+              <caret line="255" column="49" lean-forward="true" selection-start-line="246" selection-start-column="15" selection-end-line="258" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userBlog.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="62" column="89" selection-start-line="62" selection-start-column="89" selection-end-line="62" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -176,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/web/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="78" column="32" lean-forward="true" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+            <state relative-caret-position="190">
+              <caret line="131" column="48" lean-forward="true" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -197,17 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userRegister.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="342" column="43" selection-start-line="338" selection-start-column="29" selection-end-line="343" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/convert.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="266">
+              <caret line="346" column="66" lean-forward="true" selection-start-line="346" selection-start-column="66" selection-end-line="346" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -279,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/Jsencrypt.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/MD5.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userRegister.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/article_edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/user_edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/blog/web/AdminController.java" />
@@ -288,8 +171,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/blog/util/RSAUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blog/util/RSAUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/web/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userLogin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userRegister.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blog/web/LoginController.java" />
       </list>
     </option>
   </component>
@@ -476,7 +360,7 @@
       <workItem from="1608622414385" duration="5360000" />
       <workItem from="1608638576711" duration="9155000" />
       <workItem from="1608723201248" duration="2171000" />
-      <workItem from="1608726323759" duration="2401000" />
+      <workItem from="1608726323759" duration="3096000" />
     </task>
     <task id="LOCAL-00001" summary="练习">
       <created>1607532674596</created>
@@ -583,17 +467,24 @@
       <option name="project" value="LOCAL" />
       <updated>1608725394022</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="练习">
+      <created>1608729105517</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608729105517</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96792000" />
+    <option name="totallyTimeSpent" value="97487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31733525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31733525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -603,7 +494,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -799,13 +690,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/main.jsp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userBlog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="62" column="89" selection-start-line="62" selection-start-column="89" selection-end-line="62" selection-end-column="89" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/jquery.slim.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1016,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/web/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="78" column="32" lean-forward="true" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
@@ -1030,17 +907,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userRegister.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userBlog.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="342" column="43" selection-start-line="338" selection-start-column="29" selection-end-line="343" selection-end-column="25" />
+        <state relative-caret-position="266">
+          <caret line="62" column="89" selection-start-line="62" selection-start-column="89" selection-end-line="62" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userLogin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="265" column="61" lean-forward="true" selection-start-line="265" selection-start-column="61" selection-end-line="265" selection-end-column="61" />
+        <state relative-caret-position="334">
+          <caret line="255" column="49" lean-forward="true" selection-start-line="246" selection-start-column="15" selection-end-line="258" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userRegister.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="346" column="66" lean-forward="true" selection-start-line="346" selection-start-column="66" selection-end-line="346" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/web/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="131" column="48" lean-forward="true" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
         </state>
       </provider>
     </entry>

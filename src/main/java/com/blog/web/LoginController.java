@@ -125,9 +125,9 @@ public class LoginController {
     public @ResponseBody Object registerCheck(HttpServletRequest request,HttpServletResponse httpServletResponse) throws UnsupportedEncodingException {
         request.setCharacterEncoding("UTF-8");
         HashMap<String, String> res = new HashMap<String, String>();
-        String  username=MD5.convertMD5(MD5.convertMD6(request.getParameter("username")));
+        String  username=MD5.convertMD5(RSAUtil.decryptBase64(request.getParameter("username")));
         String passwd =MD5.getMD5(request.getParameter("password"));
-        String email = MD5.convertMD5(MD5.convertMD6(request.getParameter("email")));
+        String email = MD5.convertMD5(RSAUtil.decryptBase64(request.getParameter("email")));
         String nickname = request.getParameter("nickname");
         if(userService.getByEmail(email)!=null){
             res.put("stateCode", "0");
