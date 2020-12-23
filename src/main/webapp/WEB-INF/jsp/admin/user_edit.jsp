@@ -32,10 +32,7 @@
             <label for="username">用户名</label>
             <input type="text" class="form-control" id="username" name="username" placeholder="用户名" value="${MD5:convertMD5(user.username)}">
         </div>
-        <div class="form-group">
-            <label for="password">密码</label>
-            <input type="text" class="form-control" id="password" name="password" placeholder="密码" value="${user.password}">
-        </div>
+            <input type="hidden" class="form-control" id="password" name="password" placeholder="密码" value="${user.password}">
         <div class="form-group">
             <label for="email">邮箱</label>
             <input type="text" class="form-control" id="email" name="email" placeholder="邮箱" value="${MD5:convertMD5(user.email)}">
@@ -59,8 +56,8 @@
                 type: "POST",
                 url: "/admin/user/edit/do",
                 data: {
-                    id:$("#id").val() ,
-                    password:$.md5($("#password").val()),
+                    id:$("#id").val(),
+                    password:$("#password").val(),
                     email:convert($("#email").val()),
                     nickname:$("#nickname").val(),
                     state:$("#state").val(),

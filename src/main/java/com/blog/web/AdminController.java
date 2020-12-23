@@ -112,7 +112,7 @@ public class AdminController {
         HashMap<String, String> res = new HashMap<String, String>();
         request.setCharacterEncoding("UTF-8");
         user.setUsername(MD5.convertMD5(MD5.convertMD6(request.getParameter("username"))));
-        user.setPassword(MD5.getMD5(request.getParameter("password")));
+        user.setPassword(request.getParameter("password"));
         user.setNickname(request.getParameter("nickname"));
         user.setEmail(MD5.convertMD5(MD5.convertMD6(request.getParameter("email"))));
         user.setState(request.getParameter("state"));
