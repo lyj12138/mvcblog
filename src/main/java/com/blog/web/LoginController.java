@@ -128,7 +128,7 @@ public class LoginController {
         String  username=MD5.convertMD5(RSAUtil.decryptBase64(request.getParameter("username")));
         String passwd =MD5.getMD5(request.getParameter("password"));
         String email = MD5.convertMD5(RSAUtil.decryptBase64(request.getParameter("email")));
-        String nickname = request.getParameter("nickname");
+        String nickname = RSAUtil.decryptBase64(request.getParameter("nickname"));
         if(userService.getByEmail(email)!=null){
             res.put("stateCode", "0");
         }

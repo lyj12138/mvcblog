@@ -334,9 +334,11 @@
                             publicKey = res.publicKey;
                             var username;
                             var email;
+                            var nickname;
                             encrypt.setPublicKey(publicKey);
                             username = encrypt.encrypt($("#username").val());
                             email = encrypt.encrypt($("#email").val())
+                            nickname = encrypt.encrypt($("#nickname").val())
                             $.ajax({
                                 type: "POST",
                                 url: "/api/registerCheck",
@@ -344,7 +346,7 @@
                                     username: username,
                                     password: $.md5($("#passwd").val()),
                                     email: email,
-                                    nickname: $("#nickname").val()
+                                    nickname: nickname
                                 },
                                 success: function (data) {
                                     if (data.stateCode.trim() == 2) {

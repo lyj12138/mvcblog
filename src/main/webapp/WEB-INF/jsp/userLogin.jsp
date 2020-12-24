@@ -250,13 +250,13 @@
                     dataType: "json",
                     async: false,
                     success: function (res) {
-                        var encrypt = new JSEncrypt();//创建加密实例
+                        var encrypt = new JSEncrypt();
                         if (res) {
                             var publicKey = null;
-                            publicKey = res.publicKey;//后端传回来的公钥
+                            publicKey = res.publicKey;
                             var id;
-                            encrypt.setPublicKey(publicKey);// 初始化公钥
-                            id = encrypt.encrypt($("#adminId").val());// 加密用户名数据
+                            encrypt.setPublicKey(publicKey);
+                            id = encrypt.encrypt($("#adminId").val());
                             $.ajax({
                                 type: "POST",
                                 url: "/api/userCheck",

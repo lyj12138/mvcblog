@@ -1,7 +1,7 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@ taglib uri="http://www.itcast.cn/MD5"  prefix="MD5"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +47,7 @@
             <th scope="row">${comment.id}</th>
             <td>${comment.content}</td>
             <td>${comment.date}</td>
-            <td>${comment.name}</td>
+            <td>${MD5:convertMD5(comment.name)}</td>
             <td>${comment.nickname}</td>
             <td>${comment.reference}</td>
             <td>${comment.floor}</td>
