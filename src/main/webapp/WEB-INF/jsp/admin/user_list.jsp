@@ -76,7 +76,6 @@
                 location.replace("/admin/user/state");
                 else
                 location.replace("/admin/user/list");
-
             }
         });
         layer.full(index);

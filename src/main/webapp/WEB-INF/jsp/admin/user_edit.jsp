@@ -50,31 +50,47 @@
     </form>
 </div>
 </body>
+<script src="http://passport.cnblogs.com/scripts/jsencrypt.min.js"></script>
 <script>
     $("#changeButton").click(function () {
-            $.ajax({
-                type: "POST",
-                url: "/admin/user/edit/do",
-                data: {
-                    id:$("#id").val(),
-                    password:$("#password").val(),
-                    email:convert($("#email").val()),
-                    nickname:$("#nickname").val(),
-                    state:$("#state").val(),
-                    username:convert($("#username").val())
-                },
-                dataType: "json",
-                success: function(data) {
-                    if(data.stateCode.trim()=="1"){
-                        layer.msg('修改成功!',{icon:1,time:1000});
-                        setTimeout("window.location.reload()",1000);
-                    }
-                    else{
-                        layer.msg('修改失败!',{icon:5,time:1000});
-                    }
-                }
-            });
+        $.ajax({
+            url: "/api/getRSA",
+            type: "GET",
+            dataType: "json",
+            async: false,
+            success: function (res) {
+                var encrypt = new JSEncrypt();//创建加密实例
+                if (res) {
+                    var publicKey = null;
+                    publicKey = res.publicKey;//后端传回来的公钥
+                    var id;
+                    var username;
+                    var email;
+                    encrypt.setPublicKey(publicKey);// 初始化公钥
+                    id = encrypt.encrypt($("#id").val());// 加密用户名数据
+                    username = encrypt.encrypt($("#username").val());
+                    email = encrypt.encrypt($("#email").val())
+                    $.ajax({
+                        type: "POST",
+                        url: "/admin/user/edit/do",
+                        data: {
+                            id: id,
+                            password: $("#password").val(),
+                            email: email,
+                            nickname: $("#nickname").val(),
+                            state: $("#state").val(),
+                            username: username
+                        },
+                        dataType: "json",
+                        success: function (data) {
 
+                        }
+                    });
+                }
+            }
+        });
+        alert("修改成功")
+        window.location.reload();
     })
 </script>
 </html>

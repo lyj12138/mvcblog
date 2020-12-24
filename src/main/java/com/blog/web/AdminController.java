@@ -8,6 +8,7 @@ import com.blog.service.impl.ArticleServiceImpl;
 import com.blog.service.impl.CommentServiceImpl;
 import com.blog.service.impl.UserServiceImpl;
 import com.blog.util.MD5;
+import com.blog.util.RSAUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -107,16 +108,16 @@ public class AdminController {
         return modelAndView;
     }
     @RequestMapping(value = "/user/edit/do", method = RequestMethod.POST)
-    public @ResponseBody Object articleEditDo(HttpServletRequest request) throws UnsupportedEncodingException {
+    public @ResponseBody Object userEditDo(HttpServletRequest request) throws UnsupportedEncodingException {
          User user=new User();
         HashMap<String, String> res = new HashMap<String, String>();
         request.setCharacterEncoding("UTF-8");
-        user.setUsername(MD5.convertMD5(MD5.convertMD6(request.getParameter("username"))));
+        user.setUsername(MD5.convertMD5(RSAUtil.decryptBase64(request.getParameter("username"))));
         user.setPassword(request.getParameter("password"));
         user.setNickname(request.getParameter("nickname"));
-        user.setEmail(MD5.convertMD5(MD5.convertMD6(request.getParameter("email"))));
+        user.setEmail(MD5.convertMD5(RSAUtil.decryptBase64(request.getParameter("email"))));
         user.setState(request.getParameter("state"));
-        user.setId(Integer.parseInt(request.getParameter("id")));
+        user.setId(Integer.parseInt(RSAUtil.decryptBase64(request.getParameter("id"))));
         if (userService.updateByPrimaryKey(user)){
             res.put("stateCode", "1");
         }else {
