@@ -5,6 +5,7 @@ import org.apache.commons.codec.binary.Base64;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import javax.crypto.Cipher;
+import java.io.UnsupportedEncodingException;
 import java.security.*;
 import java.security.interfaces.RSAPublicKey;
 
@@ -26,8 +27,8 @@ public class RSAUtil {
         PublicKey publicKey = (RSAPublicKey)keyPair.getPublic();
         return new String(Base64.encodeBase64(publicKey.getEncoded()));
     }
-    public static String decryptBase64(String string) {
-        return new String(decrypt(Base64.decodeBase64(string.getBytes())));
+    public static String decryptBase64(String string)throws UnsupportedEncodingException {
+        return new String(decrypt(Base64.decodeBase64(string.getBytes())),"UTF-8");
     }
     private static byte[] decrypt(byte[] byteArray) {
         try {

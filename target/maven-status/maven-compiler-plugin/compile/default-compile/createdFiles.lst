@@ -24,8 +24,8 @@ com\blog\domain\Comment.class
 com\blog\dao\CatalogDao.class
 com\blog\web\EditorController.class
 com\blog\service\UserService.class
-com\blog\dao\AdminDao.class
 com\blog\web\WebConfig.class
+com\blog\dao\AdminDao.class
 com\blog\web\AdminController.class
 com\blog\web\IndexController.class
 com\blog\util\RSAUtil.class
