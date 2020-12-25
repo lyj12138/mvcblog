@@ -52,6 +52,7 @@
             <td>${comment.reference}</td>
             <td>${comment.floor}</td>
              <td><button type="button" class="btn btn-outline-danger btn-sm" onclick="ifdelete('${comment.id}') ">删除</button></td>
+        </tr>
         </c:forEach>
         </tbody>
     </table>
