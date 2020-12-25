@@ -69,6 +69,14 @@ public class ArticleController {
         modelAndView.addObject("comments",comments);
         return modelAndView;
     }
+    @RequestMapping("/user/article/comment")
+    public ModelAndView userArticleComment(HttpServletRequest request){
+        int id=Integer.parseInt(request.getParameter("id"));
+        List<Comment> comments=commentService.allComments(id,0,10);
+        ModelAndView modelAndView=new ModelAndView("/my_comment_list");
+        modelAndView.addObject("comments",comments);
+        return modelAndView;
+    }
     @RequestMapping("/admin/article/list")
     public ModelAndView articleList(@RequestParam(required=true,defaultValue="1") Integer page, @RequestParam(required=false,defaultValue="10") Integer pageSize){
         PageHelper.startPage(page, pageSize);

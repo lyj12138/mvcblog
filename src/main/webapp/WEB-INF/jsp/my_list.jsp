@@ -86,7 +86,7 @@
             <td>${article.localTime}</td>
             <td>${article.click}</td>
             <td><button type="button" class="btn btn-outline-info btn-sm" onclick="fullScreen('《${article.title}》','/admin/article/detail?id=${article.id}')">详情</button></td>
-            <td><button type="button" class="btn btn-outline-success btn-sm" onclick="fullScreen('《${article.title}》|评论管理','/admin/article/comment?id=${article.id}')">评论</button></td>
+            <td><button type="button" class="btn btn-outline-success btn-sm" onclick="fullScreen('《${article.title}》|评论管理','/user/article/comment?id=${article.id}')">评论</button></td>
             <td><button type="button" class="btn btn-outline-primary btn-sm" onclick="fullScreen('《${article.title}》|编辑','/admin/article/edit?id=${article.id}')">编辑</button>&nbsp;&nbsp;</td>
             <td><button type="button" class="btn btn-outline-danger btn-sm" onclick="ifdelete('${article.id}','${article.title}') ">删除</button></td>
         </tr>
