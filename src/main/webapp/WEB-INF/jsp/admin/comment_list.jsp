@@ -38,7 +38,7 @@
             <th>昵称</th>
             <th>回复评论id</th>
             <th>回复评论楼数</th>
-            <c:if test="${ empty sessionScope.user}"><th>删除</th></c:if>
+            <th>删除</th>
         </tr>
         </thead>
         <tbody>
@@ -51,7 +51,7 @@
             <td>${comment.nickname}</td>
             <td>${comment.reference}</td>
             <td>${comment.floor}</td>
-            <c:if test="${ empty sessionScope.user}"><td><button type="button" class="btn btn-outline-danger btn-sm" onclick="ifdelete('${comment.id}') ">删除</button></td></c:if>
+             <td><button type="button" class="btn btn-outline-danger btn-sm" onclick="ifdelete('${comment.id}') ">删除</button></td>
         </c:forEach>
         </tbody>
     </table>
