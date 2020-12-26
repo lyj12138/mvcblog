@@ -13,8 +13,8 @@ public class CommentServiceImpl implements CommentService {
 
     @Autowired
     public CommentDao commentDao;
-    public List<Comment> allComments(int article_id, int offset, int limit) {
-        return commentDao.queryAll(article_id,offset,limit);
+    public List<Comment> allComments(int article_id) {
+        return commentDao.queryAll(article_id);
     }
 
     public int insertComment(Comment comment) {
@@ -27,5 +27,20 @@ public class CommentServiceImpl implements CommentService {
 
     public boolean delById(Long id) {
         return commentDao.deleteByPrimaryKey(id)>0;
+    }
+
+    @Override
+    public List<Comment> userComments(String username) {
+        return commentDao.userComments(username);
+    }
+
+    @Override
+    public List<Comment> list() {
+        return commentDao.list();
+    }
+
+    @Override
+    public List<Comment> userCommentsReply(String username) {
+        return  commentDao.userCommentsReply(username);
     }
 }

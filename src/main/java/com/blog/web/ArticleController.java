@@ -34,7 +34,7 @@ public class ArticleController {
     public ModelAndView detail(HttpServletRequest request){
 
         int id=Integer.parseInt(request.getParameter("id"));
-        List<Comment> comments=commentService.allComments(id,0,10);
+        List<Comment> comments=commentService.allComments(id);
         Article article=articleService.selectById(id);
         Article lastArticle=articleService.selectLastArticle(id);
         Article nextArticle=articleService.selectNextArticle(id);
@@ -64,7 +64,7 @@ public class ArticleController {
     @RequestMapping("/admin/article/comment")
     public ModelAndView adminArticleComment(HttpServletRequest request){
         int id=Integer.parseInt(request.getParameter("id"));
-        List<Comment> comments=commentService.allComments(id,0,10);
+        List<Comment> comments=commentService.allComments(id);
         ModelAndView modelAndView=new ModelAndView("/admin/comment_list");
         modelAndView.addObject("comments",comments);
         return modelAndView;
@@ -72,9 +72,29 @@ public class ArticleController {
     @RequestMapping("/user/article/comment")
     public ModelAndView userArticleComment(HttpServletRequest request){
         int id=Integer.parseInt(request.getParameter("id"));
-        List<Comment> comments=commentService.allComments(id,0,10);
+        List<Comment> comments=commentService.allComments(id);
         ModelAndView modelAndView=new ModelAndView("/my_comment_list");
         modelAndView.addObject("comments",comments);
+        return modelAndView;
+    }
+    @RequestMapping("/user/comment")
+    public ModelAndView userComment(HttpServletRequest request){
+       User user=(User)request.getSession().getAttribute("user");
+        List<Comment> comments=commentService.userComments(user.getUsername());
+        List<Comment> allComments=commentService.list();
+        ModelAndView modelAndView=new ModelAndView("/comment_list");
+        modelAndView.addObject("comments",comments);
+        modelAndView.addObject("allComments",allComments);
+        return modelAndView;
+    }
+    @RequestMapping("/user/comment/reply")
+    public ModelAndView userCommentReply(HttpServletRequest request){
+        User user=(User)request.getSession().getAttribute("user");
+        List<Comment> comments=commentService.userCommentsReply(user.getUsername());
+        List<Comment> allComments=commentService.list();
+        ModelAndView modelAndView=new ModelAndView("/comment_list_reply");
+        modelAndView.addObject("comments",comments);
+        modelAndView.addObject("allComments",allComments);
         return modelAndView;
     }
     @RequestMapping("/admin/article/list")

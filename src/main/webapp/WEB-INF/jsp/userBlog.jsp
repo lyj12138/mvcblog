@@ -36,7 +36,6 @@
                 <a class="nav-link" href="/about">关于</a>
             </li>
             <li class="nav-item">
-                <!-- Example single danger button -->
                 <div class="btn-group">
                     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         新建
@@ -51,9 +50,18 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" <c:if test="${sessionScope.user['state']!='未激活'}"> href="/user/article/list"</c:if>>文章管理</a>
-
             </li>
-
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        评论
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="javascript:void(0);" <c:if test="${sessionScope.user['state']!='未激活'}">onclick="fullScreen('我的回复','/user/comment')"</c:if>>我的回复</a>
+                        <a class="dropdown-item" href="javascript:void(0);" <c:if test="${sessionScope.user['state']!='未激活'}">onclick="fullScreen('回复我的','/user/comment/reply')"</c:if>>回复我的</a>
+                    </div>
+                </div>
+            </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" <c:if test="${sessionScope.user['state']!='未激活'}">action="/user/article/search"</c:if> method="GET">
             <input class="form-control mr-sm-2" type="search" placeholder="文章标题或内容..." aria-label="Search" name="word">

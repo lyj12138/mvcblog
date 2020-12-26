@@ -25,5 +25,11 @@ public interface CommentDao {
 
     int countAllNum();
 
-    List<Comment> queryAll(@Param("article_id") int article_id, @Param("offset") int offset, @Param("limit") int limit);
+    List<Comment> queryAll(@Param("article_id") int article_id);
+
+    List<Comment> userComments(String username);
+
+    List<Comment> list();
+
+    List<Comment> userCommentsReply(String username);
 }
