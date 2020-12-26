@@ -47,8 +47,10 @@
                             <% flag=0;%>
                             <% i++;%>
                         </c:if>
+                        <c:if test="${allComment.articleId==comment.articleId}">
                         <c:if test="<%=flag==1%>">
                             <% i++;%>
+                        </c:if>
                         </c:if>
                     </c:forEach>
                     <td>${comment.content}</td>
