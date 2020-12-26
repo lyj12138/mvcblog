@@ -25,13 +25,28 @@
     from comment
     where article_id = #{article_id}
     ORDER BY id
-    LIMIT #{offset}, #{limit}
   </select>
-
+  <select id="list" resultMap="ResultMapWithBLOBs"  >
+    select *
+    from comment
+    ORDER BY id
+  </select>
   <select id="countAllNum" resultType="java.lang.Integer">
     SELECT count(*) FROM comment
   </select>
 
+  <select id="userCommentsReply" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String">
+    select *
+    from comment a
+    where  a.reference in (select id from comment b where  b.name = #{useranme})
+    ORDER BY id
+ </select>
+  <select id="userComments" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String">
+    select *
+    from comment
+    where name = #{useranme}
+    ORDER BY id
+ </select>
   <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
     select 
     <include refid="Base_Column_List" />

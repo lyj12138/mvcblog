@@ -3,43 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="48b576c3-6c09-4eac-9b0e-caa000781b4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/dao/CommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/dao/CommentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/web/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/web/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userBlog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-12-24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-12-25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/about_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/about_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/article_005fadd_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/article_005fadd_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/article_005fdetail_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/article_005fdetail_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/article_005fedit_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/article_005fedit_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/article_005flist_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/article_005flist_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/comment_005flist_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/comment_005flist_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/login_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/login_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/main_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/main_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/user_005flist_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/admin/user_005flist_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/detail_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/detail_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/my_005fcomment_005flist_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/my_005fcomment_005flist_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/my_005flist_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/my_005flist_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userBlog_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userBlog_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userLogin_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/userLogin_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/1bf89492-12a0-452e-a13e-feb6c6a90e8c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/1c7bae7b-8131-451b-aab7-a61e6a8a46dc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/2b1f0b62-8532-4c8e-adff-596f064361fc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/3609188d-e60a-4ae6-a3ed-c1665eb0e968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/44c99164-55b0-45c7-8568-94226cfc9068.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/676c91c5-1c5c-4e95-995c-b58030180979.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/6b3269d8-5d36-484f-868c-1c7c0571d635.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/755f1821-8d63-475d-9979-f10524fad8de.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/7703dfaf-6b2d-4288-8804-d680b04afc27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/7ddbef64-d474-49f1-bff1-5b898826e116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/831e9a94-d3eb-41d7-9d0b-2e3cdd0dbd29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/8a3c7c9e-b3a8-49d1-9b8f-fe1756790721.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/9a82712d-1102-47be-ac2d-43022fc25975.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/9f568b3e-a0ac-4a56-b4c0-0bd0d9b4a867.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/a3bcc02d-b1d8-4c72-a671-4ca63ae3be6b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/d21619bd-96c7-4769-9fca-a4e1434ce165.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/d7fc0671-7e32-4a0a-ab1c-cbfbc8e0d888.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/fe20e6bb-a10d-4ee6-a131-5048839122d6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/dao/CommentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/dao/CommentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/service/impl/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/web/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/web/ArticleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CommentMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,15 +54,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/my_comment_list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userRegister.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="434">
@@ -85,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/web/ArticleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="93" column="56" lean-forward="true" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
+            <state relative-caret-position="339">
+              <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -97,17 +74,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/comment_list_reply.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+            <state relative-caret-position="301">
+              <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/my_comment_list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/comment_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1523">
-              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="334">
+              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -131,10 +117,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+            <state relative-caret-position="225">
+              <caret line="74" column="56" lean-forward="true" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
+              <folding>
+                <element signature="e#2969#2975#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,19 +138,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/dao/CommentDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userLogin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+            <state relative-caret-position="434">
+              <caret line="252" column="54" selection-start-line="252" selection-start-column="54" selection-end-line="252" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/service/CommentService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userBlog.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="225">
+              <caret line="60" column="173" selection-start-line="60" selection-start-column="173" selection-end-line="60" selection-end-column="173" />
             </state>
           </provider>
         </entry>
@@ -225,14 +214,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/my_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/my_comment_list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/comment_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userBlog.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/blog/service/CommentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blog/service/impl/CommentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blog/dao/CommentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blog/web/ArticleController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/comment_list_reply.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/comment_list_reply.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/comment_list.jsp" />
       </list>
     </option>
   </component>
@@ -457,7 +446,7 @@
       <workItem from="1608788191879" duration="5400000" />
       <workItem from="1608801685171" duration="5367000" />
       <workItem from="1608902883937" duration="9146000" />
-      <workItem from="1608956730228" duration="4826000" />
+      <workItem from="1608956730228" duration="7055000" />
     </task>
     <task id="LOCAL-00001" summary="练习">
       <created>1607532674596</created>
@@ -634,17 +623,24 @@
       <option name="project" value="LOCAL" />
       <updated>1608911691300</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="练习">
+      <created>1608961843911</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1608961843911</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133615000" />
+    <option name="totallyTimeSpent" value="135844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20773639" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28080228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -926,13 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="121" column="52" selection-start-line="121" selection-start-column="52" selection-end-line="121" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/comment_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1368">
@@ -944,13 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="252" column="54" selection-start-line="252" selection-start-column="54" selection-end-line="252" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -982,45 +964,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userBlog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="60" column="173" selection-start-line="60" selection-start-column="173" selection-end-line="60" selection-end-column="173" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/service/CommentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/comment_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1523">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/comment_list_reply.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/my_comment_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userRegister.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="349" column="34" selection-start-line="349" selection-start-column="34" selection-end-line="349" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1063,8 +1010,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/web/ArticleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="93" column="56" lean-forward="true" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
+        <state relative-caret-position="339">
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userRegister.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="349" column="34" selection-start-line="349" selection-start-column="34" selection-end-line="349" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userBlog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="60" column="173" selection-start-line="60" selection-start-column="173" selection-end-line="60" selection-end-column="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="252" column="54" selection-start-line="252" selection-start-column="54" selection-end-line="252" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="74" column="56" lean-forward="true" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
+          <folding>
+            <element signature="e#2969#2975#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/my_comment_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/comment_list_reply.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/comment_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
         </state>
       </provider>
     </entry>
