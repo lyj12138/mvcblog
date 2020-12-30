@@ -85,7 +85,7 @@
      }
     function ifdelete(id) {
         layer.confirm('确定删除该用户吗?', {
-            btn: ['确定','取消'] //按钮
+            btn: ['确定','取消']
         }, function(){
             $.ajax({
                 type: 'POST',

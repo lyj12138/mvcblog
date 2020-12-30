@@ -23,14 +23,12 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <!-- Example single danger button -->
                 <div class="btn-group">
                     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         新建
                     </button>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="javascript:void(0);" onclick="fullScreen('添加文章','/admin/article/add')">文章</a>
-                        <!-- <a class="dropdown-item" href="#">评论</a>-->
                     </div>
                 </div>
             </li>

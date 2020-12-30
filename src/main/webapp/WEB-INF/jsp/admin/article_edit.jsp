@@ -63,7 +63,6 @@
         var editor = new E('#div1')
         var $text1 = $('#content')
         editor.customConfig.onchange = function (html) {
-            // 监控变化，同步更新到 textarea
             $text1.val(html)
         }
         editor.customConfig.uploadImgServer = '/uploadImg'

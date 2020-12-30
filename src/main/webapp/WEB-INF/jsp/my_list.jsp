@@ -36,14 +36,12 @@
                 <a class="nav-link" href="/about">关于</a>
             </li>
             <li class="nav-item">
-                <!-- Example single danger button -->
                 <div class="btn-group">
                     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         新建
                     </button>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="javascript:void(0);" onclick="fullScreen('添加文章','/admin/article/add')">文章</a>
-                        <!-- <a class="dropdown-item" href="#">评论</a>-->
                     </div>
                 </div>
             </li>
@@ -124,7 +122,7 @@
 
     function ifdelete(id,title) {
         layer.confirm('确定删除该文章吗?', {
-            btn: ['确定','取消'] //按钮
+            btn: ['确定','取消']
         }, function(){
             $.ajax({
                 type: 'POST',
