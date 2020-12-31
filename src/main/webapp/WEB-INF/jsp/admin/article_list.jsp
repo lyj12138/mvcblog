@@ -110,7 +110,8 @@
             content: url,
             maxmin: true,
             end: function(){
-                location.replace("/admin/article/list");
+                //location.replace("/admin/article/list");
+                location.reload();
             }
         });
         layer.full(index);

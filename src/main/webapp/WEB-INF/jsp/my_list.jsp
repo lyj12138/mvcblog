@@ -52,6 +52,17 @@
                 <a class="nav-link" href="/user/article/list">文章管理</a>
 
             </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        评论
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="javascript:void(0);" <c:if test="${sessionScope.user['state']!='未激活'}">onclick="fullScreen('我的回复','/user/comment')"</c:if>>我的回复</a>
+                        <a class="dropdown-item" href="javascript:void(0);" <c:if test="${sessionScope.user['state']!='未激活'}">onclick="fullScreen('回复我的','/user/comment/reply')"</c:if>>回复我的</a>
+                    </div>
+                </div>
+            </li>
 
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/user/article/search" method="GET">
@@ -114,7 +125,8 @@
             content: url,
             maxmin: true,
             end: function(){
-                location.replace("/user/article/list");
+                //location.replace("/user/article/list");
+                location.reload();
             }
         });
         layer.full(index);
