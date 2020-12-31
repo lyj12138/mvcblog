@@ -49,12 +49,6 @@
     </script>
 </head>
 <body onload="getPic()">
-<c:if test="${!empty error}">
-    <script>
-        alert("${error}");
-        window.location.href="login.html";
-    </script>
-</c:if>
 <h2 style="text-align: center;font-family: 'Adobe 楷体 Std R';color: black">博客系统</h2>
 <div style="float:right;" id="github_iframe"></div>
 <script>
